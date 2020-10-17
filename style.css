@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+width: 100%;
+}
+#AboutMe h2{ margin-bottom: 25px;}
+
+.img-wrap{width:100%}
+.img-wrap img{width: 100%; padding: 10px; border-color: cyan;border-radius: 50px;box-shadow: 0,0,300px grey;}
+
+
+
