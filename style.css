@@ -1,15 +1,152 @@
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-width: 100%;
+:root {
+  --bg: #e0e5ec;
+  --text: #333;
+  --card: #e0e5ec;
 }
-#AboutMe h2{ margin-bottom: 25px;}
 
-.img-wrap{width:100%}
-.img-wrap img{width: 100%; padding: 10px; border-color: cyan;border-radius: 50px;box-shadow: 0,0,300px grey;}
+body.dark {
+  --bg: #121212;
+  --text: #fff;
+  --card: #1e1e1e;
+}
 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
 
+/* TOGGLE */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
 
+/* HERO */
+.hero {
+  padding: 60px 20px;
+}
+
+.hero img {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 20px #b8bcc2,
+             -8px -8px 20px #ffffff;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: var(--card);
+  box-shadow: 6px 6px 12px #b8bcc2,
+             -6px -6px 12px #ffffff;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* SKILLS */
+.skills {
+  padding: 60px 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px #b8bcc2,
+             -6px -6px 12px #ffffff;
+}
+
+.skill-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* PROGRESS BAR */
+.progress {
+  background: #ccc;
+  border-radius: 10px;
+  height: 8px;
+  margin-top: 10px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #007bff;
+  border-radius: 10px;
+}
+/* PROJECTS */
+.projects, .contact, .badges {
+  padding: 60px 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px #b8bcc2,
+             -6px -6px 12px #ffffff;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* CONTACT */
+.contact-links a {
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* TERMINAL */
+.terminal pre {
+  background: #000;
+  color: #0f0;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+/* BADGES */
+.badge-row span {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: var(--card);
+  box-shadow: 4px 4px 8px #b8bcc2,
+             -4px -4px 8px #ffffff;
+}

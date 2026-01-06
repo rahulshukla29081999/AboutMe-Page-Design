@@ -1,42 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutMe</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Rahul Shukla | DevOps Engineer with 3.7+ years experience in AWS, Terraform, Docker, Kubernetes and CI/CD.">
+<meta name="keywords" content="DevOps Engineer, AWS, Docker, Kubernetes, Terraform, CI/CD">
+<meta name="author" content="Rahul Shukla">
+
+  <meta charset="UTF-8">
+  <title>Rahul Shukla | DevOps Engineer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="AboutMe">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h2 class="text-centre">Rahul Shukla<br> <small>DevOps Engineer</small></h2>
-                    <p>
-  I am a <strong>DevOps Engineer</strong> with <strong>3.7 years</strong> of professional experience at
-  <strong>HCLTech</strong>, having deep hands-on exposure to
-  <strong>AWS cloud services</strong>, <strong>Terraform-based infrastructure automation</strong>,
-  <strong>Docker containerization</strong>, and <strong>Kubernetes orchestration</strong>.
-</p>
 
-<p>
-  My expertise includes designing <strong>CI/CD pipelines</strong>, managing cloud resources,
-  automating deployments, and ensuring <strong>high availability</strong> and
-  <strong>performance</strong> of applications. I thrive in fast-paced environments and
-  continuously enhance my skills to align with modern <strong>DevOps</strong> and
-  <strong>cloud-native</strong> practices.
-</p>
+<!-- DARK MODE TOGGLE -->
+<div class="theme-toggle" onclick="toggleTheme()">
+  <i class="fas fa-moon"></i>
+</div>
 
-                </div>
-                <div class="col-sm-5">
-                    <div class="img-wrap">
-                       <img src="rahul.piccc.jpg"
-                    ></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <img src="rahul.piccc.jpg" alt="Rahul Shukla" data-aos="zoom-in">
+
+  <h1 data-aos="fade-up">Rahul Shukla</h1>
+  <h3 data-aos="fade-up">DevOps Engineer</h3>
+
+  <p data-aos="fade-up">
+    DevOps Engineer with <strong>3.7+ years</strong> experience in
+    AWS, Terraform, Docker, Kubernetes & CI/CD automation.
+  </p>
+
+  <!-- RESUME BUTTON -->
+  <a href="assets/resume/Rahul_Shukla_DevOps.pdf" class="btn" download data-aos="fade-up">
+    <i class="fas fa-download"></i> Download Resume
+  </a>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills" id="skills">
+  <h2 data-aos="fade-up">Skills</h2>
+
+  <div class="skills-grid">
+    
+    <div class="skill-card" data-aos="fade-up">
+      <i class="fab fa-aws"></i>
+      <h4>AWS</h4>
+      <div class="progress"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <i class="fab fa-docker"></i>
+      <h4>Docker</h4>
+      <div class="progress"><span style="width:85%"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <i class="fas fa-dharmachakra"></i>
+      <h4>Kubernetes</h4>
+      <div class="progress"><span style="width:80%"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <i class="fas fa-globe"></i>
+      <h4>Terraform</h4>
+      <div class="progress"><span style="width:75%"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <i class="fab fa-github"></i>
+      <h4>GitHub</h4>
+      <div class="progress"><span style="width:85%"></span></div>
+    </div>
+
+  </div>
+</section>
+<!-- PROJECT SECTION -->
+ <section class="projects" id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card" data-aos="fade-up">
+      <h4>Todo App</h4>
+      <p>Task management React app deployed On AWS Amplify Gen2 with Subdomain.</p>
+      <p><strong>Tech:</strong> React,Aws-Amlify, Vite</p>
+      <a href="https://todo.rahulshukla.online/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project-card" data-aos="fade-up">
+      <h4>Riding Club</h4>
+      <p>Community website deployed on AWS Amplify with Subdomain.</p>
+      <p><strong>Tech:</strong> AWS-Amlify,HTML,CSS</p>
+      <a href="https://ridingclub.rahulshukla.online/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project-card" data-aos="fade-up">
+      <h4>Neumorphism UI</h4>
+      <p>Modern UI design showcasing neumorphism effects.</p>
+      <p><strong>Tech:</strong> AWS-Amlify,HTML, CSS</p>
+      <a href="https://neumorphism.rahulshukla.online/" target="_blank">Live Demo</a>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <h2 data-aos="fade-up">Contact Me</h2>
+
+  <p data-aos="fade-up">
+    Open to DevOps & Cloud opportunities 🚀
+  </p>
+
+  <div class="contact-links" data-aos="fade-up">
+    <a href="mailto:shuklarahulkanpur@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://github.com/rahulshukla29081999" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://linkedin.com/in/rahul-shukla-a35831180" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+<!-- TERMINAL SECTION -->
+<section class="terminal" data-aos="fade-up">
+  <pre>
+$ rahul --skills
+AWS | Docker | Kubernetes | Terraform | CI/CD
+
+$ rahul --deploy
+Infrastructure automated successfully 🚀
+  </pre>
+</section>
+<!-- AWS/CI-CD BADGES SECTION -->
+<section class="badges" data-aos="fade-up">
+  <h2>Cloud & DevOps Stack</h2>
+
+  <div class="badge-row">
+    <span>AWS</span>
+    <span>Docker</span>
+    <span>Kubernetes</span>
+    <span>Terraform</span>
+    <span>GitHub Actions</span>
+  </div>
+</section>
+
+
+
+
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>AOS.init({ once: true });</script>
+
 </body>
 </html>
